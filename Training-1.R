@@ -1,15 +1,23 @@
 data
+#creation of the data
 dim(data)
+#manupulating the dimention of the data
 subject <- data[1]
 dates <- data[4]
 cbind(subject, dates)
+#combining both the dates and the subjects together
 cl1 <- data[1,]
 cl18 <- data[150,]
 rowbind<-rbind(cl1, cl18)
+#finding the row bind of the data of c11 and c118
 colMeans(data[1])
+#the mean of the collumn data
 mean(data$subject)
+#the mean of the data subject
 attach(data)
+#entering the data
 detach(data)
+#remove the data
 subject
 attach(dates)
 c<-c(1,"e",32,32,3)
